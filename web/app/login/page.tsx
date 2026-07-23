@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
-import Input from "@/components/ui/input";
+import Input from "@/components/ui/Input";
 import BackgroundLayout from "@/components/layout/BackgroundLayout";
 
 

@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import GradientBackground from "@/components/ui/GradientBackground";
+import GradientBackground from "@/components/porfolio/GradientBackground";
 
 type BackgroundLayoutProps = {
     children: ReactNode;

@@ -17,7 +17,7 @@ export default function Card({
                 p-8
                 shadow-card
                 ${className}
-            `}
+            `}  
         >
             {children}
         </div>

@@ -1,67 +1,30 @@
 import Link from "next/link";
 
 import BackgroundLayout from "@/components/layout/BackgroundLayout";
+import PortfolioLayout from "@/components/layout/PortfolioLayout";
+import HeroPanel from "@/components/porfolio/HeroPanel";
+import ProfileCard from "@/components/porfolio/ProfileCard";
+import NavBar from "@/components/porfolio/NavBar";
 
 export default function LandingPage() {
 
     return (
-        <BackgroundLayout>
-            <section
-                className="
-                    flex
-                    w-full
-                    flex-col
-                    items-center
-                    justify-center
-                    px-6
-                    text-center
-                "
-            >
+        <PortfolioLayout
+            profile={
+                <ProfileCard/>
+            }
 
-                <h1
-                    className="
-                        text-6xl
-                        font-bold
-                        tracking-tight
-                        text-white
-                    "
-                >
-                    Jewel Hunter
-                </h1>
+            navigation={
+                <NavBar>
+                    Navigation
+                </NavBar>
+            }
+        >
 
+            <HeroPanel>
+                About
+            </HeroPanel>
 
-                <p
-                    className="
-                        mt-6
-                        text-xl
-                        text-slate-300
-                    "
-                >
-                    Computer Science student building software,
-                    exploring technology, and preparing for the future.
-                </p>
-
-
-                <Link
-                    href="/login"
-                    className="
-                        mt-10
-                        inline-block
-                        rounded-full
-                        bg-blue-600
-                        px-8
-                        py-3
-                        font-semibold
-                        text-white
-                        transition
-                        hover:bg-blue-700
-                    "
-                >
-                    Career Dashboard
-                </Link>
-
-
-            </section>
-        </BackgroundLayout>
+        </PortfolioLayout>
     );
 }
