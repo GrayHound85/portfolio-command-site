@@ -12,7 +12,7 @@ export default function HeroPanel({
     return (
         <div className={`
             rounded-card
-            bg-black/30
+            bg-gray-950/40
             p-8
             h-full
             ${className}

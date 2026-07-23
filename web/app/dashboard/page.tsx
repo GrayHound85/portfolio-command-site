@@ -1,4 +1,4 @@
-import DashboardCard from "@/components/dashboard/DashboardCard";
+import DashboardCard from "@/components/sections/dashboard/DashboardCard";
 import { Main } from "next/document";
 
 

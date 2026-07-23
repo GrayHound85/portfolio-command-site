@@ -11,13 +11,13 @@ export default function Button({
         <button
             className={`
                 rounded-xl
-                bg-blue-600
+                bg-primary
                 px-6
                 py-3
                 font-medium
                 text-white
                 transition-colors
-                hover:bg-blue-700
+                hover:bg-primary-hover
                 disabled:cursor-not-allowed
                 disabled:opacity-50
                 ${className ?? ""}
