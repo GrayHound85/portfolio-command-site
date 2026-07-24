@@ -5,6 +5,7 @@ import BackgroundLayout from "./BackgroundLayout";
 type PortfolioLayoutProps = {
     profile: ReactNode;
     navigation: ReactNode;
+    floating?: ReactNode;
     children: ReactNode;
 };
 
@@ -12,6 +13,7 @@ export default function PortfolioLayout({
     profile,
     navigation,
     children,
+    floating,
 }: PortfolioLayoutProps) {
 
     return (
@@ -65,6 +67,7 @@ export default function PortfolioLayout({
 
                 </section>
             </div>
+            {floating}
         </BackgroundLayout>
     );
 }

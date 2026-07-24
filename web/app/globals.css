@@ -8,6 +8,7 @@
 
     --color-primary: #53BAB8;
     --color-primary-hover: #439997;
+    --color-panel: #030712b5;
 
     --color-surface: #ffffff;
 
@@ -32,6 +33,7 @@
 
     --color-primary: var(--color-primary);
     --color-primary-hover: var(--color-primary-hover);
+    --color-panel: var(--color-panel);
 
     --color-surface: var(--color-surface);
 

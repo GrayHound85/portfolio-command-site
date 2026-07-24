@@ -1,31 +1,44 @@
-import { ButtonHTMLAttributes } from "react";
+import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 
-type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
+type LinkButtonProps = {
+    href: string;
+    children: React.ReactNode;
+    className?: string;
+};
 
-export default function Button({
+export default function LinkButton({
+    href,
     children,
     className,
-    ...props
-}: ButtonProps) {
+}: LinkButtonProps) {
+
     return (
-        <button
+        <Link
+            href={href}
             className={twMerge(`
+                inline-flex
+                items-center
+                justify-center
+
                 rounded-xl
+
                 bg-primary
+
                 px-6
                 py-3
+
                 font-medium
                 text-white
+
                 transition-colors
+
                 hover:bg-primary-hover
-                disabled:cursor-not-allowed
-                disabled:opacity-50
+
                 ${className ?? ""}
             `)}
-            {...props}
         >
             {children}
-        </button>
-    )
-}   
+        </Link>
+    );
+}
