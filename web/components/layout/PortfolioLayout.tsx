@@ -17,7 +17,7 @@ export default function PortfolioLayout({
 }: PortfolioLayoutProps) {
 
     return (
-        <BackgroundLayout>
+        <BackgroundLayout background="hero">
             <div
                 className="
                     flex

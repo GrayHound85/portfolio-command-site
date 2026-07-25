@@ -18,7 +18,7 @@ export default function AdminButton() {
 
                 h-12
                 w-12
-                text-[#166c6a]
+                text-[#335f6f]
 
                 px-0
                 py-0

@@ -27,7 +27,7 @@ export default function LoginPage() {
     }
 
     return (
-        <BackgroundLayout>
+        <BackgroundLayout background="hero">
             <div
                 className="
                     flex
@@ -41,6 +41,7 @@ export default function LoginPage() {
                     className="
                         w-full
                         max-w-md
+                        bg-panel
                     "
                 >
 
@@ -76,6 +77,7 @@ export default function LoginPage() {
                         className="
                             mt-8
                             space-y-5
+                            text-black
                         "
                     >
 

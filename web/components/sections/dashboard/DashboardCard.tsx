@@ -1,33 +1,59 @@
-import Card from "../../ui/Card";
+import LinkCard from "@/components/ui/LinkCard";
 
 type DashboardCardProps = {
+    href: string;
     title: string;
     description: string;
+    icon: React.ReactNode;
 };
 
 
 export default function DashboardCard({
+    href,
     title,
-    description
+    description,
+    icon,
 }: DashboardCardProps) {
 
     return (
-        <Card>
+        <LinkCard
+            href={href}
+            className="
+                h-48
+                flex
+                flex-col
+                justify-between
+            "
+        >
 
-            <h2 className='
-                text-xl
-                font-semibold
-            '>
-                {title}
-            </h2>
+            <div>
+                {icon}
+            </div>
 
-            <p className='
-                mt-2
-                text-gray-600
-            '>
-                {description}
-            </p>
 
-        </Card>
+            <div>
+
+                <h2
+                    className="
+                        text-xl
+                        font-semibold
+                    "
+                >
+                    {title}
+                </h2>
+
+
+                <p
+                    className="
+                        mt-2
+                        text-text-secondary
+                    "
+                >
+                    {description}
+                </p>
+
+            </div>
+
+        </LinkCard>
     );
 }

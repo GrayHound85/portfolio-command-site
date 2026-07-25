@@ -1,59 +1,49 @@
+import BackgroundLayout from "@/components/layout/BackgroundLayout";
+
 import DashboardCard from "@/components/sections/dashboard/DashboardCard";
-import { Main } from "next/document";
 
+export default function DashboardPage() {
+    return (
+        <BackgroundLayout background="subtle">
+            <main className="
+                flex
+                flex-col
+                w-full
+                h-full
+                items-center
+                p-8
+              ">
+                <h2 className="font-bold text-3xl text-text-secondary">Good morning</h2>
+                <h1 className="font-bold text-5xl p-4">Oliver</h1>
 
-export default function Home() {
-  return (
-    <main className="
-      min-h-screen
-      bg-gray-100
-      p-8
-    ">
-
-      <h1 className="
-        text-4xl
-        font-bold
-      ">
-        Career Hub
-      </h1>
-
-      <p className="
-        mt-2
-        text-gray-600
-      ">
-        Your personal software engineering dashboard.
-      </p>
-
-      <div className="
-          mt-8
-          grid
-          grid-cols-1
-          md:grid-cols-2
-          gap-6
-      ">
-
-          <DashboardCard
-              title="Learning Resources"
-              description="Track courses, tutorials and useful links."
-          />
-
-          <DashboardCard
-              title="Internships"
-              description="Track opportunities and applications."
-          />
-
-          <DashboardCard
-              title="Projects"
-              description="Manage your software projects."
-          />
-
-          <DashboardCard
-              title="Networking"
-              description="Track contacts and conversations."
-          />
-
-      </div>
-
-    </main>
-  );
+                <div className="
+                  h-full
+                  w-full
+                  flex
+                  flex-col
+                  gap-4
+                  p-4
+                ">
+                  <DashboardCard
+                    href="/career"
+                    title="Career"
+                    description="Manage your career goals and progress."
+                    icon={<span>🎯</span>}
+                  />
+                  <DashboardCard
+                    href="/media"
+                    title="Media"
+                    description="Explore media content and updates."
+                    icon={<span>🎬</span>}
+                  />
+                  <DashboardCard
+                    href="/finance"
+                    title="Finance"
+                    description="Track your financial activities."
+                    icon={<span>💰</span>}
+                  />
+                </div>
+            </main>
+        </BackgroundLayout>
+    );
 }

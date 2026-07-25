@@ -1,3 +1,5 @@
+import { twMerge } from "tailwind-merge";
+
 type CardProps = {
     children: React.ReactNode;
     className?: string;
@@ -10,14 +12,12 @@ export default function Card({
 
     return (
         <div
-            className={`
+            className={twMerge(`
                 rounded-card
-                border
-                bg-surface
+                bg-panel/40
                 p-8
                 shadow-card
-                ${className}
-            `}  
+            `, className)}
         >
             {children}
         </div>
