@@ -7,10 +7,12 @@ export type BackgroundVariant =
     | "subtle"
     | "minimal";
 
+
 type BackgroundLayoutProps = {
     children: ReactNode;
     background?: BackgroundVariant;
 };
+
 
 export default function BackgroundLayout({
     children,
@@ -28,7 +30,7 @@ export default function BackgroundLayout({
 
                 min-h-screen
 
-                overflow-hidden
+                overflow-x-hidden
 
                 bg-background
             "
@@ -38,6 +40,7 @@ export default function BackgroundLayout({
                 variant={background}
             />
 
+
             <div
                 className="
                     relative
@@ -45,7 +48,7 @@ export default function BackgroundLayout({
 
                     flex
 
-                    min-h-screen
+                    min-h-full
                     w-full
                 "
             >

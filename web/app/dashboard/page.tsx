@@ -28,19 +28,19 @@ export default function DashboardPage() {
                     href="/career"
                     title="Career"
                     description="Manage your career goals and progress."
-                    icon={<span>🎯</span>}
+                    icon={<span></span>}
                   />
                   <DashboardCard
                     href="/media"
                     title="Media"
                     description="Explore media content and updates."
-                    icon={<span>🎬</span>}
+                    icon={<span></span>}
                   />
                   <DashboardCard
                     href="/finance"
                     title="Finance"
                     description="Track your financial activities."
-                    icon={<span>💰</span>}
+                    icon={<span></span>}
                   />
                 </div>
             </main>
