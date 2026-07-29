@@ -21,26 +21,27 @@ export default function DashboardPage() {
                   w-full
                   flex
                   flex-col
-                  gap-4
+                  xl:flex-row
+                  gap-8
                   p-4
                 ">
                   <DashboardCard
                     href="/career"
                     title="Career"
                     description="Manage your career goals and progress."
-                    icon={<span></span>}
+                    icon={<span>o</span>}
                   />
                   <DashboardCard
                     href="/media"
                     title="Media"
                     description="Explore media content and updates."
-                    icon={<span></span>}
+                    icon={<span>o</span>}
                   />
                   <DashboardCard
                     href="/finance"
                     title="Finance"
                     description="Track your financial activities."
-                    icon={<span></span>}
+                    icon={<span>o</span>}
                   />
                 </div>
             </main>
