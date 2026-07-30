@@ -18,6 +18,7 @@
     --color-border: #334155;
 
     --radius-card: 48px;
+    --radius-card_inner: 36px;
     --radius-button: 10px;
 
     --shadow-card:
@@ -44,6 +45,7 @@
 
 
     --radius-card: var(--radius-card);
+    --radius-card_inner: var(--radius-card_inner);
     --radius-button: var(--radius-button);
 
 
